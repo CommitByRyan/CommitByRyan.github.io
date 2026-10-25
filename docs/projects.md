@@ -13,6 +13,7 @@
 | [github-publish-guardrails](https://github.com/CommitByRyan/github-publish-guardrails) | 写作工具链 | Markdown 技能包 | 可用 |
 | [CommitByRyan.github.io](https://github.com/CommitByRyan/CommitByRyan.github.io) | 个人站点 | Docsify + GitHub Pages | 维护中 |
 | [Ryan-links](https://github.com/CommitByRyan/Ryan-links) | 个人站点 | Vue 3 + Vite | 维护中 |
+| [quiet-tech-style](https://github.com/CommitByRyan/quiet-tech-style) | 设计规范 | 纯 CSS + 令牌 | v1.0 可用 |
 | [online-cinema-ticket](https://github.com/CommitByRyan/online-cinema-ticket) | 课程项目 | Spring Boot + MyBatis + Thymeleaf | 结项 |
 | [parking-lot-management-system](https://github.com/CommitByRyan/parking-lot-management-system) | 课程项目 | JSP + Servlet + MySQL | 结项 |
 | [ParkingWeb](https://github.com/CommitByRyan/ParkingWeb) | 课程项目 | 材料归档（PPT / 报告） | 归档 |
@@ -113,7 +114,33 @@
 
 ---
 
-## 三、课程项目
+## 三、设计规范
+
+### quiet-tech-style · 静默科技
+
+> 一套「有科技感但成熟克制」的界面规范。暗色只在首屏、强调色只有一个、分隔用发丝线不用阴影。
+
+| | |
+| --- | --- |
+| 技术栈 | 纯 CSS（令牌层 + 组件层），零依赖、零框架 |
+| 规模 | 8 个文件：2 份 CSS、3 份文档、1 份 prompt、1 个演示页 |
+| 状态 | v1.0 可用 |
+
+**它是什么**：不是主题皮肤，是一套**带理由的约束**。五条硬规则——单一强调色、暗色只进首屏、发丝线分隔、等宽字体只做标记、圆角 ≤2px——每条都写了"为什么"，因为风格会被模仿，理由才会被复用。
+
+**三种用法**
+
+1. **直接引 CSS**：`tokens.css` 定色与字号，`theme.css` 提供 `qt-*` 组件；
+2. **复制 prompt**：`prompt.md` 整段丢给模型，替换占位符即可生成同风格页面；
+3. **装成技能**：`SKILL.md` 放入技能目录，说"做个科技感但克制的落地页"自动触发。
+
+**本站就用它**：你现在看到的暗色首屏、编号版块、发丝线分隔，都来自这套规范。
+
+📄 [在线演示](https://commitbyryan.github.io/quiet-tech-style/)｜[仓库](https://github.com/CommitByRyan/quiet-tech-style)
+
+---
+
+## 四、课程项目
 
 这组是我在校课程作业。**如实标注：它们是小组项目，不是个人作品。**
 

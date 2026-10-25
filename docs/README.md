@@ -10,7 +10,7 @@
 </div>
 <div class="lp-stats">
 <div><b>06</b><span>技术笔记</span></div>
-<div><b>08</b><span>公开仓库</span></div>
+<div><b>09</b><span>公开仓库</span></div>
 <div><b>95.3<i>%</i></b><span>上下文压缩</span></div>
 <div><b>41</b><span>端到端断言</span></div>
 </div>
@@ -89,7 +89,7 @@
 <div class="lp-head">
 <div class="no">03</div>
 <h2>项目</h2>
-<p>八个公开仓库，按用途分三组。课程项目如实标注小组规模，不写成个人作品。</p>
+<p>九个公开仓库，按用途分四组。课程项目如实标注小组规模，不写成个人作品。</p>
 </div>
 <div class="lp-cards">
 <a class="lp-card" href="#/projects.md">
@@ -105,7 +105,13 @@
 <div class="meta">2 个仓库</div>
 </a>
 <a class="lp-card" href="#/projects.md">
-<div class="kicker">03 / Coursework</div>
+<div class="kicker">03 / Design</div>
+<h3>设计规范</h3>
+<p>静默科技：暗色只在首屏、单一强调色、发丝线分隔。含令牌、组件层、规范文档与可粘贴 prompt。</p>
+<div class="meta">1 个仓库 · 含在线演示</div>
+</a>
+<a class="lp-card" href="#/projects.md">
+<div class="kicker">04 / Coursework</div>
 <h3>课程项目</h3>
 <p>Spring Boot 点餐系统、JSP 停车场管理系统、材料归档。小组作业，分工已留痕。</p>
 <div class="meta">3 个仓库</div>
