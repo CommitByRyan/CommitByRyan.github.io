@@ -86,17 +86,22 @@
 .sidebar ul li a:hover { color: var(--accent); }
 .sidebar ul li.active > a { color: var(--accent); font-weight: 600; }
 
-/* 二级目录：细刻度代替整块色条 */
+/* 二级目录：细刻度代替整块色条（几何属性强制覆盖，避免受主题原规则影响） */
 .app-sub-sidebar li::before {
-  content: "";
-  float: left;
-  width: 9px;
-  height: 1px;
-  margin: .95em 10px 0 0;
-  padding: 0;
-  background: rgba(11, 13, 16, .22);
+  content: "" !important;
+  float: left !important;
+  width: 9px !important;
+  height: 1px !important;
+  min-height: 0 !important;
+  max-height: 1px !important;
+  margin: .95em 10px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: rgba(11, 13, 16, .22) !important;
   transition: width .2s ease, background .2s ease;
 }
+.app-sub-sidebar li { border-left: 0 !important; }
 .app-sub-sidebar li a {
   color: #6B7280;
   font-size: 13px;
@@ -107,8 +112,8 @@
 }
 .app-sub-sidebar li.active::before,
 .app-sub-sidebar li:hover::before {
-  width: 14px;
-  background: var(--accent);
+  width: 14px !important;
+  background: var(--accent) !important;
 }
 
 /* ---------- 首页：品牌化版式 ---------- */
