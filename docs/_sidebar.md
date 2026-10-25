@@ -1,3 +1,11 @@
-- **技术博客**
-  - [开篇：搭建我的技术博客](README.md)
-  - [导航站部署全记录](_posts/02-deploy-navigation-site.md)
+- **开始**
+  - [首页](README.md)
+- **工程实践**
+  - [01 搭建技术博客：Docsify + GitHub Pages](_posts/01-build-blog-docsify.md)
+  - [02 为自己的技术能力打造门户](_posts/02-deploy-navigation-site.md)
+- **项目复盘**
+  - [03 给番茄作家后台写一个 MCP 服务](_posts/03-fanqie-writer-mcp.md)
+- **徽写 · 长篇写作工作流**
+  - [04 长篇小说的状态机](_posts/04-huixie-state-machine.md)
+  - [05 单章上下文 12k 硬预算](_posts/05-huixie-context-budget.md)
+  - [06 给 AI 工作流写测试](_posts/06-huixie-testable-workflow.md)
