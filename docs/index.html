@@ -9,9 +9,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/style.css">
+
+  <style>
+    #splash {
+      position: fixed; inset: 0; z-index: 9999;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      background: #ffffff;
+      transition: opacity .38s ease;
+      opacity: 1;
+    }
+    #splash.is-out { opacity: 0; pointer-events: none; }
+
+    #splash .title {
+      font-family: var(--font-sans, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif);
+      font-size: 21px; font-weight: 500; letter-spacing: .06em;
+      color: #2c3e50;
+      animation: rise .55s cubic-bezier(.22,.61,.36,1) both;
+    }
+    #splash .caret {
+      display: inline-block; width: 2px; height: 1em;
+      margin-left: 6px; vertical-align: -0.12em;
+      background: #42b983;
+      animation: blink 1.05s steps(1) infinite;
+    }
+    #splash .sub {
+      margin-top: 12px;
+      font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace);
+      font-size: 11px; letter-spacing: .28em;
+      color: #a0a6ab;
+      animation: rise .55s .12s cubic-bezier(.22,.61,.36,1) both;
+    }
+    #splash .bar {
+      position: relative;
+      width: 180px; height: 2px; margin-top: 22px;
+      background: #eef1f3; border-radius: 2px; overflow: hidden;
+      animation: rise .55s .2s cubic-bezier(.22,.61,.36,1) both;
+    }
+    #splash .bar i {
+      position: absolute; top: 0; left: 0;
+      display: block; width: 42%; height: 100%;
+      background: #42b983;
+      animation: slide 1.15s cubic-bezier(.65,.05,.36,1) infinite;
+    }
+    #splash .slow {
+      position: absolute; bottom: 48px;
+      max-width: 78vw; text-align: center;
+      font-size: 12px; line-height: 1.8; color: #9aa0a6;
+      opacity: 0; transition: opacity .4s ease;
+    }
+    #splash.is-slow .slow { opacity: 1; }
+    #splash .slow a { color: #42b983; text-decoration: none; border-bottom: 1px solid rgba(66,185,131,.4); }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes slide {
+      0%   { left: -45%; }
+      100% { left: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #splash .title, #splash .sub, #splash .bar { animation: none; }
+      #splash .caret { animation: none; }
+      #splash .bar i { animation: none; left: 0; width: 100%; }
+    }
+  </style>
 </head>
 <body>
-  <div id="app">正在加载…</div>
+  <div id="splash" role="status" aria-live="polite">
+    <div class="title">Ryan 的技术笔记<span class="caret"></span></div>
+    <div class="sub">LOADING</div>
+    <div class="bar"><i></i></div>
+    <div class="slow">
+      加载比预期慢。本站依赖 CDN 资源，可能是网络问题。<br>
+      <a href="./">重新加载</a>
+    </div>
+  </div>
+
+  <div id="app"></div>
 
   <script>
     window.$docsify = {
@@ -40,8 +118,39 @@
         crossChapter: true
       },
 
-      themeColor: '#42b983'
+      themeColor: '#42b983',
+
+      plugins: [
+        function (hook) {
+          var done = false;
+          hook.doneEach(function () {
+            if (done) return;
+            done = true;
+            hideSplash();
+          });
+        }
+      ]
     }
+
+    function hideSplash() {
+      var el = document.getElementById('splash');
+      if (!el || el.classList.contains('is-out')) return;
+      el.classList.add('is-out');
+      setTimeout(function () {
+        if (el && el.parentNode) el.parentNode.removeChild(el);
+      }, 420);
+    }
+
+    // 兜底一：CDN 挂了也要给个说法，而不是无限等待
+    setTimeout(function () {
+      var el = document.getElementById('splash');
+      if (el && !window.Docsify) el.classList.add('is-slow');
+    }, 6000);
+
+    // 兜底二：Docsify 已加载但渲染卡住时，强制放行，避免永久遮罩
+    setTimeout(function () {
+      if (window.Docsify) hideSplash();
+    }, 12000);
   </script>
 
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
