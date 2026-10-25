@@ -1,59 +1,146 @@
-# Ryan 的技术笔记
+<div class="lp">
+<div class="lp-hero">
+<div class="lp-eyebrow">Tech Notes · Since 2025</div>
+<h1>把做过的事<br>拆开写清楚<em>。</em></h1>
+<p class="lead">不写「十分钟入门」式的整理稿。每篇对应一个真实落地的项目：为什么这么做、踩了什么坑、最后跑出什么数。代码能跑，数据可复现。</p>
+<div class="lp-nav">
+<a class="is-primary" href="#/_posts/04-huixie-state-machine.md">读最新一篇 →</a>
+<a href="#/projects.md">项目总览</a>
+<a href="https://github.com/CommitByRyan">GitHub</a>
+</div>
+<div class="lp-stats">
+<div><b>06</b><span>技术笔记</span></div>
+<div><b>08</b><span>公开仓库</span></div>
+<div><b>95.3<i>%</i></b><span>上下文压缩</span></div>
+<div><b>41</b><span>端到端断言</span></div>
+</div>
+<div class="lp-scroll">Scroll to explore</div>
+</div>
 
-> 把做过的事拆开写清楚：为什么这么做、踩了什么坑、最后跑出什么数。
+<div class="lp-sec lp-reveal">
+<div class="lp-head">
+<div class="no">01</div>
+<h2>在做的事</h2>
+<p>三个项目，一条主线：把长篇写作里能用程序保证的部分，从人手里拿走。</p>
+</div>
+<div class="lp-cards">
+<a class="lp-card" href="#/_posts/04-huixie-state-machine.md">
+<div class="kicker">Python · 零依赖</div>
+<h3>徽写 · 长篇写作工作流</h3>
+<p>静态设定与动态状态分离，伏笔四态，单章上下文硬预算 12,000 字符，节拍器先于正文。</p>
+<div class="meta">28 文件 · 41 项断言 · MIT</div>
+</a>
+<a class="lp-card" href="#/_posts/03-fanqie-writer-mcp.md">
+<div class="kicker">Node.js · MCP</div>
+<h3>番茄作家后台 MCP 服务</h3>
+<p>平台没有公开 API，于是把网页后台变成 9 个工具，让「传第 1 到 20 章」变成一句话。</p>
+<div class="meta">9 工具 · 双传输 · 17 客户端</div>
+</a>
+<a class="lp-card" href="#/projects.md">
+<div class="kicker">Markdown · 技能包</div>
+<h3>发布守门员</h3>
+<p>推送前强制校验五条红线：不改 Git 身份、不注入 AI 署名、版权归作者本人。</p>
+<div class="meta">3 文件 · 纯提示词 · MIT</div>
+</a>
+</div>
+</div>
 
-这里不写「十分钟入门」式的整理稿。每篇都对应一个真实落地的项目，代码能跑、数据可复现、坑是真踩过的。
+<div class="lp-sec is-alt lp-reveal">
+<div class="lp-head">
+<div class="no">02</div>
+<h2>技术笔记</h2>
+<p>按编号排序，从搭站到状态机，每篇都能独立读完。</p>
+</div>
+<div class="lp-list">
+<a class="lp-item" href="#/_posts/01-build-blog-docsify.md">
+<span class="no">01</span>
+<span class="ttl">搭建技术博客：Docsify + GitHub Pages<small>零构建方案的四选一比较，以及五个必踩的坑</small></span>
+<span class="arrow">→</span>
+</a>
+<a class="lp-item" href="#/_posts/02-deploy-navigation-site.md">
+<span class="no">02</span>
+<span class="ttl">大二，我为自己的技术能力打造门户<small>Vite 子路径、幽灵文件、CORS：四个部署深坑</small></span>
+<span class="arrow">→</span>
+</a>
+<a class="lp-item" href="#/_posts/03-fanqie-writer-mcp.md">
+<span class="no">03</span>
+<span class="ttl">给番茄作家后台写一个 MCP 服务<small>stdout 不能有杂音；抓鉴权要站在页面里面看</small></span>
+<span class="arrow">→</span>
+</a>
+<a class="lp-item" href="#/_posts/04-huixie-state-machine.md">
+<span class="no">04</span>
+<span class="ttl">长篇小说的状态机<small>为什么单个 resolved 布尔位不够用</small></span>
+<span class="arrow">→</span>
+</a>
+<a class="lp-item" href="#/_posts/05-huixie-context-budget.md">
+<span class="no">05</span>
+<span class="ttl">单章上下文 12k 硬预算<small>从 8.7 万字符压到 4 千，关键信息一条不少</small></span>
+<span class="arrow">→</span>
+</a>
+<a class="lp-item" href="#/_posts/06-huixie-testable-workflow.md">
+<span class="no">06</span>
+<span class="ttl">给 AI 工作流写测试<small>最危险的不是脚本报错，是报错时被判成通过</small></span>
+<span class="arrow">→</span>
+</a>
+</div>
+</div>
 
-## 最近在做什么
+<div class="lp-sec lp-reveal">
+<div class="lp-head">
+<div class="no">03</div>
+<h2>项目</h2>
+<p>八个公开仓库，按用途分三组。课程项目如实标注小组规模，不写成个人作品。</p>
+</div>
+<div class="lp-cards">
+<a class="lp-card" href="#/projects.md">
+<div class="kicker">01 / Toolchain</div>
+<h3>写作工具链</h3>
+<p>徽写、番茄作家后台 MCP、发布守门员。都是「让重复劳动离开手工」这一类。</p>
+<div class="meta">3 个仓库</div>
+</a>
+<a class="lp-card" href="#/projects.md">
+<div class="kicker">02 / Sites</div>
+<h3>个人站点</h3>
+<p>本站（Docsify + Pages）与导航页（Vue 3 + Vite），都托管在 GitHub Pages。</p>
+<div class="meta">2 个仓库</div>
+</a>
+<a class="lp-card" href="#/projects.md">
+<div class="kicker">03 / Coursework</div>
+<h3>课程项目</h3>
+<p>Spring Boot 点餐系统、JSP 停车场管理系统、材料归档。小组作业，分工已留痕。</p>
+<div class="meta">3 个仓库</div>
+</a>
+</div>
+</div>
 
-**徽写 V1.0** —— 一套把长篇小说拆成可执行管线的写作工作流。
+<div class="lp-sec is-alt lp-reveal">
+<div class="lp-head">
+<div class="no">04</div>
+<h2>关于</h2>
+</div>
+<div class="lp-about">
+<div>
+<p>计算机专业在读。日常在写代码、写小说，把两者的流程互相借。</p>
+<p>写作上的问题（状态管理、一致性校验、可复现的验收）拿去改软件工程，反过来也一样——<strong>长篇小说的连贯性问题，本质是一个数据一致性问题</strong>。</p>
+<p>这也是「徽写」的起点：不是让模型写得更华丽，而是让一本写到两百章的书，仍然记得第三章那把钥匙在谁手里。</p>
+</div>
+<div class="lp-facts">
+<div><span>站点</span><b>Docsify + Pages</b></div>
+<div><span>主力语言</span><b>Python / Java / JS</b></div>
+<div><span>在写</span><b>长篇连载 · 技术笔记</b></div>
+<div><span>许可</span><b>MIT</b></div>
+<div><span>仓库</span><b>CommitByRyan</b></div>
+</div>
+</div>
+</div>
 
-起因很具体：连载写到中后期，模型开始记错事——主角的伤好了又被写成没好，前文交出去的钥匙下一章还在兜里。查下来不是模型记性差，是**状态没有唯一出口**：时间线在摘要里、人物在设定库、道具在正文、伏笔在另一份账本，每写一章都要重新拼一次。
-
-徽写把这四件事压成三层：静态设定、动态状态、生成视图。配套做了上下文硬预算（单章 ≤ 12,000 字符）、节拍器（正文前先出 3–4 个冲突节点）、结构化闸门（退出码说话，不靠肉眼）。
-
-实测把单章上下文从 8.7 万字符压到 4 千，降幅 95.3%，未触发降级。代码在 [huixie](https://github.com/CommitByRyan/huixie)，MIT。
-
-## 文章
-
-| # | 标题 | 一句话 |
-| --- | --- | --- |
-| 01 | [搭建技术博客：Docsify + GitHub Pages](_posts/01-build-blog-docsify.md) | 不用构建工具，改 Markdown 即改站点 |
-| 02 | [大二，我为自己的技术能力打造门户](_posts/02-deploy-navigation-site.md) | 个人导航站从想法到上线的部署与踩坑 |
-| 03 | [给番茄作家后台写一个 MCP 服务](_posts/03-fanqie-writer-mcp.md) | 零依赖 Node 实现，双传输，17 个客户端一键注册 |
-| 04 | [长篇小说的状态机：静态设定与动态状态分离](_posts/04-huixie-state-machine.md) | 伏笔四态、相关度打分、为什么单个布尔位不够用 |
-| 05 | [单章上下文 12k 硬预算](_posts/05-huixie-context-budget.md) | 从 8.7 万字符压到 4 千，且关键信息一条不少 |
-| 06 | [给 AI 工作流写测试](_posts/06-huixie-testable-workflow.md) | 闸门 fail-open、41 项断言、品牌门禁抓出我自己的泄漏 |
-
-## 项目
-
-全部公开仓库（8 个，含 3 个课程项目）见 **[项目总览](projects.md)**，那里有技术栈、规模、状态与实现要点。
-
-这里只列三个还在维护的：
-
-| 项目 | 是什么 |
-| --- | --- |
-| [huixie](https://github.com/CommitByRyan/huixie) | 长篇写作工作流：状态双层、上下文预算、节拍器、写回钩子、发布件标准化 |
-| [fanqie-writer-mcp](https://github.com/CommitByRyan/fanqie-writer-mcp) | 番茄作家后台的 MCP 服务，让 AI 客户端直接管章节 |
-| [Ryan-links](https://github.com/CommitByRyan/Ryan-links) | 个人导航页，Vue 3 单页 |
-
-课程项目（点餐系统、停车场管理系统、材料归档）在 [项目总览](projects.md) 里单独分组，并标注了小组规模——**小组作业不写成个人作品**。
-
-## 关于
-
-计算机专业在读。日常在写代码、写小说、把两者的流程互相借。
-
-写作上的经验（状态管理、一致性校验、可复现的验收）拿去改软件工程，反过来也一样——**长篇小说的连贯性问题，本质是一个数据一致性问题**。
-
-## 本站
-
-Docsify + GitHub Pages，无构建步骤，源码即内容。支持全文搜索（右上角）、侧边栏目录、代码高亮、阅读进度条。
-
-本地预览：
-
-```bash
-npm i docsify-cli -g
-docsify serve docs
-```
-
-想看我怎么做这个站的，见 [第 01 篇](_posts/01-build-blog-docsify.md)。
+<div class="lp-foot">
+<span>© 2026 Ryan</span>
+<span class="sep">·</span>
+<a href="https://github.com/CommitByRyan">GitHub</a>
+<span class="sep">·</span>
+<a href="https://github.com/CommitByRyan/CommitByRyan.github.io">本站源码</a>
+<span class="sep">·</span>
+<a href="#/projects.md">项目总览</a>
+</div>
+</div>

@@ -33,6 +33,7 @@
 │  ├─projects.md                 # 项目总览（全部公开仓库）
 │  ├─_sidebar.md                 # 侧边栏目录（分组）
 │  ├─_404.md                     # 404 页面
+│  ├─assets/theme.css            # 首页品牌化主题（暗色首屏、数字条、滚动入场）
 │  ├─_posts/                     # 文章正文，按编号排序
 │  │  ├─01-build-blog-docsify.md
 │  │  ├─02-deploy-navigation-site.md

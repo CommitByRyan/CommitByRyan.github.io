@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/style.css">
+  <link rel="stylesheet" href="assets/theme.css">
 
   <style>
     #splash {
@@ -122,11 +123,41 @@
 
       plugins: [
         function (hook) {
-          var done = false;
+          var first = false;
+          var io = null;
+
+          function isHome() {
+            var h = location.hash || '';
+            return h === '' || h === '#' || h === '#/' || h === '#!/';
+          }
+
+          function reveal() {
+            var nodes = [].slice.call(document.querySelectorAll('.lp-reveal:not(.in)'));
+            if (!nodes.length) return;
+            if (!('IntersectionObserver' in window)) {
+              nodes.forEach(function (n) { n.classList.add('in'); });
+              return;
+            }
+            if (io) io.disconnect();
+            io = new IntersectionObserver(function (entries) {
+              entries.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add('in');
+                  io.unobserve(e.target);
+                }
+              });
+            }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+            nodes.forEach(function (n) { io.observe(n); });
+          }
+
           hook.doneEach(function () {
-            if (done) return;
-            done = true;
-            hideSplash();
+            var home = isHome();
+            document.body.classList.toggle('lp-home', home);
+            if (home) reveal();
+            if (!first) {
+              first = true;
+              hideSplash();
+            }
           });
         }
       ]
