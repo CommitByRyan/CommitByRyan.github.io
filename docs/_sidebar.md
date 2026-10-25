@@ -2,7 +2,7 @@
   - [首页](README.md)
 - **工程实践**
   - [01 搭建技术博客：Docsify + GitHub Pages](_posts/01-build-blog-docsify.md)
-  - [02 为自己的技术能力打造门户](_posts/02-deploy-navigation-site.md)
+  - [02 大二，我为自己的技术能力打造门户](_posts/02-deploy-navigation-site.md)
 - **项目复盘**
   - [03 给番茄作家后台写一个 MCP 服务](_posts/03-fanqie-writer-mcp.md)
 - **徽写 · 长篇写作工作流**
