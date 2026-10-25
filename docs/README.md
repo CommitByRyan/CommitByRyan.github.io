@@ -19,7 +19,7 @@
 | # | 标题 | 一句话 |
 | --- | --- | --- |
 | 01 | [搭建技术博客：Docsify + GitHub Pages](_posts/01-build-blog-docsify.md) | 不用构建工具，改 Markdown 即改站点 |
-| 02 | [为自己的技术能力打造门户](_posts/02-deploy-navigation-site.md) | 个人导航站从想法到上线的部署与踩坑 |
+| 02 | [大二，我为自己的技术能力打造门户](_posts/02-deploy-navigation-site.md) | 个人导航站从想法到上线的部署与踩坑 |
 | 03 | [给番茄作家后台写一个 MCP 服务](_posts/03-fanqie-writer-mcp.md) | 零依赖 Node 实现，双传输，17 个客户端一键注册 |
 | 04 | [长篇小说的状态机：静态设定与动态状态分离](_posts/04-huixie-state-machine.md) | 伏笔四态、相关度打分、为什么单个布尔位不够用 |
 | 05 | [单章上下文 12k 硬预算](_posts/05-huixie-context-budget.md) | 从 8.7 万字符压到 4 千，且关键信息一条不少 |
