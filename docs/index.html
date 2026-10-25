@@ -153,6 +153,7 @@
           hook.doneEach(function () {
             var home = isHome();
             document.body.classList.toggle('lp-home', home);
+            document.body.classList.toggle('lp-ready', home);
             if (home) reveal();
             if (!first) {
               first = true;
@@ -182,6 +183,21 @@
     setTimeout(function () {
       if (window.Docsify) hideSplash();
     }, 12000);
+
+    // 首帧前置标记：在 Docsify 渲染前就切到落地页版式，避免「侧边栏闪一下再消失」
+    (function () {
+      function isHome() {
+        var h = location.hash || '';
+        return h === '' || h === '#' || h === '#/' || h === '#!/';
+      }
+      function apply() {
+        var home = isHome();
+        document.body.classList.toggle('lp-home', home);
+        document.body.classList.toggle('lp-ready', home);
+      }
+      apply();
+      window.addEventListener('hashchange', apply);
+    })();
   </script>
 
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
