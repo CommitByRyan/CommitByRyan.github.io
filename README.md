@@ -17,6 +17,12 @@
 | 05 | [单章上下文 12k 硬预算](docs/_posts/05-huixie-context-budget.md) | 从 8.7 万字符压到 4 千 |
 | 06 | [给 AI 工作流写测试](docs/_posts/06-huixie-testable-workflow.md) | 闸门 fail-open、41 项断言、品牌门禁 |
 
+## 项目
+
+全部公开仓库的汇总页：[docs/projects.md](docs/projects.md)
+
+按用途分为写作工具链（huixie、fanqie-writer-mcp、github-publish-guardrails）、个人站点（本站、Ryan-links）、课程项目（点餐系统、停车场管理系统、材料归档），每条标注技术栈、规模与状态。课程项目如实标注小组规模，不写成个人作品。
+
 ## 目录结构
 
 ```
@@ -24,6 +30,7 @@
 ├─docs/                          # GitHub Pages 发布目录
 │  ├─index.html                  # Docsify 入口与配置
 │  ├─README.md                   # 首页（站点门面 + 索引）
+│  ├─projects.md                 # 项目总览（全部公开仓库）
 │  ├─_sidebar.md                 # 侧边栏目录（分组）
 │  ├─_404.md                     # 404 页面
 │  ├─_posts/                     # 文章正文，按编号排序

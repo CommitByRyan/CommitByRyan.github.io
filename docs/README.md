@@ -27,13 +27,17 @@
 
 ## 项目
 
+全部公开仓库（8 个，含 3 个课程项目）见 **[项目总览](projects.md)**，那里有技术栈、规模、状态与实现要点。
+
+这里只列三个还在维护的：
+
 | 项目 | 是什么 |
 | --- | --- |
 | [huixie](https://github.com/CommitByRyan/huixie) | 长篇写作工作流：状态双层、上下文预算、节拍器、写回钩子、发布件标准化 |
 | [fanqie-writer-mcp](https://github.com/CommitByRyan/fanqie-writer-mcp) | 番茄作家后台的 MCP 服务，让 AI 客户端直接管章节 |
 | [Ryan-links](https://github.com/CommitByRyan/Ryan-links) | 个人导航页，Vue 3 单页 |
-| [parking-lot-management-system](https://github.com/CommitByRyan/parking-lot-management-system) | 课程项目：JSP 停车场管理系统 |
-| [online-cinema-ticket](https://github.com/CommitByRyan/online-cinema-ticket) | 课程项目：在线点餐系统，含 CI |
+
+课程项目（点餐系统、停车场管理系统、材料归档）在 [项目总览](projects.md) 里单独分组，并标注了小组规模——**小组作业不写成个人作品**。
 
 ## 关于
 

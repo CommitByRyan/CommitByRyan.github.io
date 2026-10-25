@@ -1,5 +1,6 @@
 - **开始**
   - [首页](README.md)
+  - [项目总览](projects.md)
 - **工程实践**
   - [01 搭建技术博客：Docsify + GitHub Pages](_posts/01-build-blog-docsify.md)
   - [02 大二，我为自己的技术能力打造门户](_posts/02-deploy-navigation-site.md)
