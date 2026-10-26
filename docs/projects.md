@@ -11,6 +11,7 @@
 | [huixie](https://github.com/CommitByRyan/huixie) | 写作工具链 | Python 3.10+（零依赖） | v1.0 可用 |
 | [fanqie-writer-mcp](https://github.com/CommitByRyan/fanqie-writer-mcp) | 写作工具链 | Node.js（零依赖）· MCP | 可用 |
 | [github-publish-guardrails](https://github.com/CommitByRyan/github-publish-guardrails) | 写作工具链 | Markdown 技能包 | 可用 |
+| [agent-craft](https://github.com/CommitByRyan/agent-craft) | Agent 实践 | Markdown + Mermaid | 持续更新 |
 | [CommitByRyan.github.io](https://github.com/CommitByRyan/CommitByRyan.github.io) | 个人站点 | Docsify + GitHub Pages | 维护中 |
 | [Ryan-links](https://github.com/CommitByRyan/Ryan-links) | 个人站点 | Vue 3 + Vite | 维护中 |
 | [quiet-tech-style](https://github.com/CommitByRyan/quiet-tech-style) | 设计规范 | 纯 CSS + 令牌 | v1.0 可用 |
@@ -86,7 +87,33 @@
 
 ---
 
-## 二、个人站点
+## 二、Agent 实践
+
+### agent-craft
+
+> 我的 Agent 使用手册与迭代轨迹：稳定原则、可复用工作流、实验记录与可视化思想历程。
+
+| | |
+| --- | --- |
+| 技术栈 | Markdown + Mermaid，无构建依赖 |
+| 规模 | 首版 17 个文件、15 篇 Markdown |
+| 状态 | 持续更新 |
+
+**它解决什么**：把分散在全局指令、技能仓库、文章和日常对话里的使用方法集中起来。仓库不把结论和过程混成一锅，而是分成五层：
+
+- **原则**：变化最慢，回答“什么情况下应该怎么做”；
+- **工作流**：已经跑通的重复任务，回答“怎样稳定完成”；
+- **实验**：有假设、执行过程与可复核结果；
+- **决策**：记录重要取舍、代价和复查条件；
+- **演进**：用时间线与关系图保留认识如何改变。
+
+**为什么单独建仓**：稳定习惯、一次性实验和时间线有不同的更新频率。全部写进一个 `AGENTS.md` 会越来越臃肿；只留最终结论，又会丢掉“为什么后来改了做法”。仓库用结构把这些内容分开，再用模板保证新记录不会漏掉证据。
+
+📄 [仓库](https://github.com/CommitByRyan/agent-craft)
+
+---
+
+## 三、个人站点
 
 ### CommitByRyan.github.io
 
@@ -118,7 +145,7 @@
 
 ---
 
-## 三、设计规范
+## 四、设计规范
 
 ### quiet-tech-style · 静默科技
 
@@ -144,7 +171,7 @@
 
 ---
 
-## 四、课程项目
+## 五、课程项目
 
 这组是我在校课程作业。**如实标注：它们是小组项目，不是个人作品。**
 
@@ -193,7 +220,7 @@
 
 ## 关于这些仓库的几条约定
 
-**许可**：除课程项目 `online-cinema-ticket` 用 Apache-2.0 外，其余均为 MIT。课程项目整体沿用学校的交付约定。
+**许可**：各仓库以自身 `LICENSE` 为准。课程项目 `online-cinema-ticket` 使用 Apache-2.0；`agent-craft` 当前保留所有权利。
 
 **课程项目的边界**：小组作业标注团队规模与分工，不写成个人作品。代码能公开是因为课程允许，但署名权属于每个人。
 

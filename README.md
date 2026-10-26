@@ -21,7 +21,7 @@
 
 全部公开仓库的汇总页：[docs/projects.md](docs/projects.md)
 
-按用途分为写作工具链（huixie、fanqie-writer-mcp、github-publish-guardrails）、个人站点（本站、Ryan-links）、设计规范（quiet-tech-style）、课程项目（点餐系统、停车场管理系统、材料归档），每条标注技术栈、规模与状态。课程项目如实标注小组规模，不写成个人作品。
+按用途分为写作工具链（huixie、fanqie-writer-mcp、github-publish-guardrails）、Agent 实践（agent-craft）、个人站点（本站、Ryan-links）、设计规范（quiet-tech-style）、课程项目（点餐系统、停车场管理系统、材料归档），每条标注技术栈、规模与状态。课程项目如实标注小组规模，不写成个人作品。
 
 ## 目录结构
 

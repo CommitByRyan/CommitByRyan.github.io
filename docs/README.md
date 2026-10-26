@@ -10,7 +10,7 @@
 </div>
 <div class="lp-stats">
 <div><b>06</b><span>技术笔记</span></div>
-<div><b>09</b><span>公开仓库</span></div>
+<div><b>10</b><span>公开仓库</span></div>
 <div><b>95.3<i>%</i></b><span>上下文压缩</span></div>
 <div><b>41</b><span>端到端断言</span></div>
 </div>
@@ -89,7 +89,7 @@
 <div class="lp-head">
 <div class="no">03</div>
 <h2>项目</h2>
-<p>九个公开仓库，按用途分四组。课程项目如实标注小组规模，不写成个人作品。</p>
+<p>十个公开仓库，按用途分五组。课程项目如实标注小组规模，不写成个人作品。</p>
 </div>
 <div class="lp-cards">
 <a class="lp-card" href="#/projects.md">
@@ -99,19 +99,25 @@
 <div class="meta">3 个仓库</div>
 </a>
 <a class="lp-card" href="#/projects.md">
-<div class="kicker">02 / Sites</div>
+<div class="kicker">02 / Agent practice</div>
+<h3>Agent 实践</h3>
+<p>稳定原则、可复用工作流、实验与决策，以及可追溯的 Agent 使用演进。</p>
+<div class="meta">1 个仓库 · 持续更新</div>
+</a>
+<a class="lp-card" href="#/projects.md">
+<div class="kicker">03 / Sites</div>
 <h3>个人站点</h3>
 <p>本站（Docsify + Pages）与导航页（Vue 3 + Vite），都托管在 GitHub Pages。</p>
 <div class="meta">2 个仓库</div>
 </a>
 <a class="lp-card" href="#/projects.md">
-<div class="kicker">03 / Design</div>
+<div class="kicker">04 / Design</div>
 <h3>设计规范</h3>
 <p>静默科技：暗色只在首屏、单一强调色、发丝线分隔。含令牌、组件层、规范文档与可粘贴 prompt。</p>
 <div class="meta">1 个仓库 · 含在线演示</div>
 </a>
 <a class="lp-card" href="#/projects.md">
-<div class="kicker">04 / Coursework</div>
+<div class="kicker">05 / Coursework</div>
 <h3>课程项目</h3>
 <p>Spring Boot 点餐系统、JSP 停车场管理系统、材料归档。小组作业，分工已留痕。</p>
 <div class="meta">3 个仓库</div>
