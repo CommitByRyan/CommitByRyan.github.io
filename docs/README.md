@@ -39,8 +39,8 @@
 <a class="lp-card" href="#/projects.md">
 <div class="kicker">Markdown · 技能包</div>
 <h3>发布守门员</h3>
-<p>推送前校验五条署名红线：不改 Git 身份、不注入 AI 署名、版权归作者本人；推送后同步本站项目索引。</p>
-<div class="meta">3 文件 · 纯提示词 · MIT</div>
+<p>推送前校验五条署名红线；推送后同步项目页、首页与根 README 的全部项目索引。</p>
+<div class="meta">v1.2 · 纯提示词 · MIT</div>
 </a>
 </div>
 </div>

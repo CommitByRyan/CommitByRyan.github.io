@@ -10,7 +10,7 @@
 | --- | --- | --- | --- |
 | [huixie](https://github.com/CommitByRyan/huixie) | 写作工具链 | Python 3.10+（零依赖） | v1.0 可用 |
 | [fanqie-writer-mcp](https://github.com/CommitByRyan/fanqie-writer-mcp) | 写作工具链 | Node.js（零依赖）· MCP | 可用 |
-| [github-publish-guardrails](https://github.com/CommitByRyan/github-publish-guardrails) | 写作工具链 | Markdown 技能包 | 可用 |
+| [github-publish-guardrails](https://github.com/CommitByRyan/github-publish-guardrails) | 写作工具链 | Markdown 技能包 | v1.2 可用 |
 | [agent-craft](https://github.com/CommitByRyan/agent-craft) | Agent 实践 | Markdown + Mermaid | 持续更新 |
 | [CommitByRyan.github.io](https://github.com/CommitByRyan/CommitByRyan.github.io) | 个人站点 | Docsify + GitHub Pages | 维护中 |
 | [Ryan-links](https://github.com/CommitByRyan/Ryan-links) | 个人站点 | Vue 3 + Vite | 维护中 |
@@ -75,13 +75,15 @@
 | | |
 | --- | --- |
 | 形态 | 纯提示词技能包（`SKILL.md` + `README.md` + `LICENSE`），无脚本 |
-| 状态 | v1.1 可用 |
+| 状态 | v1.2 可用 |
 
 五条红线：不改本地 Git 身份；提交信息不加 AI/Agent 署名；不向 README/LICENSE 注入「AI 生成」类标签；版权持有人保持作者本人；提交与发布文案用维护者第一人称或 Conventional Commits。
 
 触发词覆盖「上传 / 提交 / 推送 / 发布 / 打 tag / 开 PR / 部署 Pages / 新增仓库」。
 
-它在 v1.1 加了第六条规则：**发布后必须同步本站的项目索引**。新建或更名仓库时，项目页速览表、首页数字条、根 README 三处一起改，然后等 Pages 构建通过、目标页返回 200。规则里还写明「数量是易腐数据」——写死「N 个公开仓库」就得每次同步，连续两次忘记就降级为 `N+`。
+它在 v1.1 加了第六条规则：**发布后必须同步本站的项目索引**。v1.2 把这条规则收紧为“全部关联文档一次同步”：项目页速览与正文、首页总数与分类卡、根 README 完整项目表必须同时更新；根 README 没有项目表时先补建，不能只改一段说明文字。
+
+完整性判定也写进了规则：新项目同时出现在两个主要项目索引中、所有数量能相互对上、Pages 构建成功、链接有落点，发布才算完成。规则还写明「数量是易腐数据」——写死「N 个公开仓库」就得每次同步，连续两次忘记就降级为 `N+`。
 
 它的价值在于把「我记得要检查」变成「每次都被检查」。这条规则的第一次执行对象就是它自己：本站的项目页正是在它上线后同步的。
 

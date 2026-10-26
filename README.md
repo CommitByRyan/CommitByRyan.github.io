@@ -21,6 +21,19 @@
 
 全部公开仓库的汇总页：[docs/projects.md](docs/projects.md)
 
+| 项目 | 类别 | 技术栈 | 状态 |
+| --- | --- | --- | --- |
+| [huixie](https://github.com/CommitByRyan/huixie) | 写作工具链 | Python 3.10+（零依赖） | v1.0 可用 |
+| [fanqie-writer-mcp](https://github.com/CommitByRyan/fanqie-writer-mcp) | 写作工具链 | Node.js（零依赖）· MCP | 可用 |
+| [github-publish-guardrails](https://github.com/CommitByRyan/github-publish-guardrails) | 写作工具链 | Markdown 技能包 | v1.2 可用 |
+| [agent-craft](https://github.com/CommitByRyan/agent-craft) | Agent 实践 | Markdown + Mermaid | 持续更新 |
+| [CommitByRyan.github.io](https://github.com/CommitByRyan/CommitByRyan.github.io) | 个人站点 | Docsify + GitHub Pages | 维护中 |
+| [Ryan-links](https://github.com/CommitByRyan/Ryan-links) | 个人站点 | Vue 3 + Vite | 维护中 |
+| [quiet-tech-style](https://github.com/CommitByRyan/quiet-tech-style) | 设计规范 | 纯 CSS + 令牌 | v1.0 可用 |
+| [online-cinema-ticket](https://github.com/CommitByRyan/online-cinema-ticket) | 课程项目 | Spring Boot + MyBatis + Thymeleaf | 结项 |
+| [parking-lot-management-system](https://github.com/CommitByRyan/parking-lot-management-system) | 课程项目 | JSP + Servlet + MySQL | 结项 |
+| [ParkingWeb](https://github.com/CommitByRyan/ParkingWeb) | 课程项目 | 材料归档（PPT / 报告） | 归档 |
+
 按用途分为写作工具链（huixie、fanqie-writer-mcp、github-publish-guardrails）、Agent 实践（agent-craft）、个人站点（本站、Ryan-links）、设计规范（quiet-tech-style）、课程项目（点餐系统、停车场管理系统、材料归档），每条标注技术栈、规模与状态。课程项目如实标注小组规模，不写成个人作品。
 
 ## 目录结构
